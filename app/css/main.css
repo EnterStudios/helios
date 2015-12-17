@@ -357,21 +357,33 @@ form.register input.mail {
     border-bottom: 1px solid #404040;
     font-size: 22px;
     outline: none !important;
+    text-align: left;
 }
 
 form.register input.submit {
-    border-radius: 15px;
+    border-radius: 20px;
     border: 1px solid #404040;
     padding: 3px 13px;
     background: white;
     font-size: 22px;
     margin-top: 20px;
+
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    outline: none;
+}
+
+form.register input.submit:hover {
+    background: #404040;
+    color: white;
 }
 
 form.register {
     float: left;
     width: 100%;
     margin-top: 20px;
+    text-align: center;
+
 }
 
 .countdown {
@@ -384,12 +396,48 @@ img.logo {
     margin-bottom: 30px;
 }
 
-.mock-container-mobile.mobile.visible-xs {
+.mock-container-mobile.mobile {
     float: left;
     margin-top: -30%;
+    padding-bottom: 50px;
+}
+
+ul.footer-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    float: left;
+    width: 100%;
+    padding-top: 50px;
+}
+
+ul.footer-menu li {
+    display: inline-block;
+}
+
+ul.footer-menu li a {
+    float: left;
+    padding: 5px;
+    color: #404040;
+    font-size: 20px;
 }
 
 @media (max-width: 767px) {
+
+    form.register {
+        text-align: center;
+    }
+
+    form.register input.mail {
+        width: 90%;
+        text-align: center;
+    }
+
+    ul.footer-menu {
+        text-align: center;
+    }
+
     .container {
         padding: 0 30px;
     }
