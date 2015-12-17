@@ -293,6 +293,8 @@ textarea {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background: white;
+    -webkit-font-smoothing: antialiased;
+    padding-bottom: 30px;
 }
 
 h1.heading {
@@ -320,10 +322,15 @@ h2.heading {
     background-size: cover;
 }
 
+.background-image .container {
+    position: relative;
+}
+
 .header-teaser {
     text-transform: uppercase;
     color: white;
     font-weight: 800;
+    font-size: 40px;
 }
 
 .header-container {
@@ -331,12 +338,68 @@ h2.heading {
     margin-bottom: 50px;
 }
 
-.logo {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.description {
+    margin-top: 25px;
+    font-size: 22px;
 }
 
-.description {
+.mock-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    bottom: -150px;
+    padding: 0;
+}
+
+form.register input.mail {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #404040;
+    font-size: 22px;
+    outline: none !important;
+}
+
+form.register input.submit {
+    border-radius: 15px;
+    border: 1px solid #404040;
+    padding: 3px 13px;
+    background: white;
+    font-size: 22px;
     margin-top: 20px;
-    font-size: 18px ;
+}
+
+form.register {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.countdown {
+    padding-top: 15px;
+}
+
+img.logo {
+    max-width: 270px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.mock-container-mobile.mobile.visible-xs {
+    float: left;
+    margin-top: -30%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .header-teaser {
+        font-size: 28px;
+    }
+
+    .background-image {
+        padding-bottom: 35%;
+    }
+
 }
