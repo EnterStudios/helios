@@ -450,4 +450,9 @@ ul.footer-menu li a {
         padding-bottom: 35%;
     }
 
+    img.logo {
+        margin-top: 0px;
+        max-width: 300px;
+    }
+
 }
