@@ -6,7 +6,7 @@ $(document).ready(function () {
     var errorBorder = {border: "1.5px solid #FF0000"};
     var normalBorder = {border: "1px solid #e6e6e6"};
 
-    $(".registration-submit").click(function (event) {
+    $(".submit").click(function (event) {
         event.preventDefault();
 
         var $form = $("#registration");
@@ -16,11 +16,7 @@ $(document).ready(function () {
         name.css(normalBorder);
         mail.css(normalBorder);
 
-
-        if (!name.val()) {
-            name.css(errorBorder);
-            return;
-        } else if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
+        if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
             mail.css(errorBorder);
             return;
         }
@@ -29,7 +25,6 @@ $(document).ready(function () {
             name: name.val(),
             mail: mail.val()
         };
-
 
         $.ajax({
             type: 'POST',
