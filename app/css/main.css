@@ -335,7 +335,6 @@ h2.heading {
 
 .header-container {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .description {
@@ -349,12 +348,13 @@ h2.heading {
     right: 0;
     bottom: -150px;
     padding: 0;
+    padding-right: 25px;
 }
 
 form.register input.mail {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #404040;
+    border-bottom: 1px solid #DEDEDE;
     font-size: 22px;
     outline: none !important;
     text-align: left;
@@ -387,18 +387,19 @@ form.register {
 
 .countdown {
     padding-top: 15px;
+    padding-right: 0;
 }
 
 img.logo {
     max-width: 270px;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .mock-container-mobile.mobile {
     float: left;
     margin-top: -30%;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
 
 ul.footer-menu {
@@ -422,6 +423,10 @@ ul.footer-menu li a {
     font-size: 20px;
 }
 
+ul.footer-menu li a:first-child {
+    padding-left: 0;
+}
+
 .success, .error {
     color: white;
     font-size: 25px;
@@ -433,7 +438,6 @@ ul.footer-menu li a {
     display: block;
 }
 
-
 .error {
     color: #ff4637;
 }
@@ -442,15 +446,33 @@ ul.footer-menu li a {
     display: none;
 }
 
-
 .error.generic, .error.conflict, .error.generic .generic, .error.conflict .conflict, .error-feedback.generic, .error-feedback .generic {
     display: block;
 }
 
+.countdown {
+    padding-bottom: 30px;
+}
+
 .circle {
     float: left;
-    width: 100px;
+    width: 100%;
+    padding: 10px;
+
+    background-size: 80%;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
     padding: 5px;
+}
+
+.wrapper h4.sub {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .circle#design {
@@ -469,9 +491,40 @@ ul.footer-menu li a {
     background-image: url(../img/icons/info.svg);
 }
 
-
+@media (max-width: 991px) {
+    .wrapper h4.sub {
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 767px) {
+
+    .description {
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        max-width: 75%
+    }
+
+    .countdown {
+        padding: 0;
+    }
+
+    .circle {
+        padding: 22%;
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .wrapper h4.sub {
+        font-size: 25px;
+    }
+
+    .mock-container {
+        padding: 0
+    }
 
     form.register {
         text-align: center;
@@ -495,7 +548,7 @@ ul.footer-menu li a {
     }
 
     .background-image {
-        padding-bottom: 35%;
+        padding-bottom: 42%;
     }
 
     img.logo {
