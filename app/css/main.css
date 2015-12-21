@@ -422,6 +422,31 @@ ul.footer-menu li a {
     font-size: 20px;
 }
 
+.success, .error {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: none;
+}
+
+.success.thanks {
+    display: block;
+}
+
+
+.error {
+    color: #ff4637;
+}
+
+.conflict, .generic {
+    display: none;
+}
+
+
+.error.generic, .error.conflict, .error.generic .generic, .error.conflict .conflict, .error-feedback.generic, .error-feedback .generic {
+    display: block;
+}
+
 @media (max-width: 767px) {
 
     form.register {
