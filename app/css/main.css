@@ -447,6 +447,30 @@ ul.footer-menu li a {
     display: block;
 }
 
+.circle {
+    float: left;
+    width: 100px;
+    padding: 5px;
+}
+
+.circle#design {
+    background-image: url(../img/icons/pinsel.svg);
+}
+
+.circle#usertests {
+    background-image: url(../img/icons/baustelle.svg);
+}
+
+.circle#development {
+    background-image: url(../img/icons/werkzeug.svg);
+}
+
+.circle#marketing {
+    background-image: url(../img/icons/info.svg);
+}
+
+
+
 @media (max-width: 767px) {
 
     form.register {
