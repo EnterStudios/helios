@@ -3,17 +3,15 @@ $(document).ready(function () {
 
 // registration
 
-    var errorBorder = {border: "1.5px solid #FF0000"};
-    var normalBorder = {border: "1px solid #e6e6e6"};
+    var errorBorder = {'border-bottom': "1.5px solid #FF0000"};
+    var normalBorder = {'border-bottom': "1px solid #404040"};
 
     $(".submit").click(function (event) {
         event.preventDefault();
 
         var $form = $("#registration");
-        var name = $form.find('input[name="name"]');
         var mail = $form.find('input[name="email"]');
 
-        name.css(normalBorder);
         mail.css(normalBorder);
 
         if (!mail.val() || !(/[^\s@]+@[^\s@]+\.[^\s@]+/).test(mail.val())) {
@@ -22,10 +20,9 @@ $(document).ready(function () {
         }
 
         var register = {
-            name: name.val(),
             mail: mail.val()
         };
-
+        
         $.ajax({
             type: 'POST',
             url: '/mail/register',
