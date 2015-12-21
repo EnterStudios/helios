@@ -422,9 +422,10 @@ ul.footer-menu li a {
     padding: 5px;
     color: #404040;
     font-size: 20px;
+    border-radius: 3px;
 }
 
-ul.footer-menu li a:first-child {
+ul.footer-menu li.first a {
     padding-left: 0;
 }
 
@@ -439,7 +440,7 @@ ul.footer-menu li a:first-child {
 
 .success {
     background-color: white;
-    color: black;
+    color: #404040;
     padding: 0;
 }
 
