@@ -482,7 +482,7 @@ ul.footer-menu li.first a {
     color: white;
     text-align: center;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .circle#design {
@@ -509,6 +509,11 @@ ul.footer-menu li.first a {
 
 @media (max-width: 767px) {
 
+    img.logo {
+        width: 100%;
+        max-width: none;
+    }
+
     .description {
         margin-bottom: 35px;
     }
@@ -523,9 +528,10 @@ ul.footer-menu li.first a {
 
     .circle {
         padding: 22%;
-        background-size: 50%;
+        background-size: 50% 50%;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center 77%;
+        padding-bottom: 0;
     }
 
     .wrapper h4.sub {
