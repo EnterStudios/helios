@@ -1,5 +1,28 @@
 $(document).ready(function () {
 
+    var options = {
+        color: 'white',
+        strokeWidth: 5,
+        duration: 2000,
+        easing: 'bounce'
+    };
+
+    var circle = new ProgressBar.Circle('#design', options);
+
+    circle.animate(0.7);
+
+    var circle = new ProgressBar.Circle('#usertests', options);
+
+    circle.animate(0.4);
+
+    var circle = new ProgressBar.Circle('#development', options);
+
+    circle.animate(0.2);
+
+    var circle = new ProgressBar.Circle('#marketing', options);
+
+    circle.animate(0.2);
+
 
 // registration
 
@@ -22,7 +45,7 @@ $(document).ready(function () {
         var register = {
             mail: mail.val()
         };
-        
+
         $.ajax({
             type: 'POST',
             url: '/mail/register',
