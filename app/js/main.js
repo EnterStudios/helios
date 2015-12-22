@@ -61,8 +61,6 @@ $(document).ready(function () {
             url: '/mail/register',
             contentType: 'application/json',
             data: JSON.stringify(register),
-            success: registrationSuccess,
-            error: registrationError,
             processData: false
         });
 
