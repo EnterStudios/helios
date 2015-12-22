@@ -42,11 +42,21 @@ $(document).ready(function () {
             return;
         }
 
+        var fadoutPromise = jQuery.Deferred();
+        
+        $form.fadeOut(function () {
+            $(".loading-spinner").fadeIn();
+
+            setTimeout(function () {
+                fadoutPromise.resolve();
+            }, 2000)
+        });
+
         var register = {
             mail: mail.val()
         };
 
-        $.ajax({
+        var requestPromise = $.ajax({
             type: 'POST',
             url: '/mail/register',
             contentType: 'application/json',
@@ -55,20 +65,35 @@ $(document).ready(function () {
             error: registrationError,
             processData: false
         });
+
+        $.when(requestPromise, fadoutPromise)
+            .done(function () {
+                registrationSuccess();
+            })
+            .fail(function (response) {
+                // wait for fadout promise
+                fadoutPromise
+                    .then(function () {
+                        registrationError(response.status);
+                    })
+                    .fail(function () {
+                        registrationError(undefined);
+                    })
+            });
     });
 
     function registrationSuccess() {
-        $("#registration").fadeOut(function () {
+        $(".loading-spinner").fadeOut(function () {
             $(".success").fadeIn("thanks");
         });
 
     }
 
-    function registrationError(resp) {
-        var err = (resp.status === 409 ? 'conflict' : 'generic');
+    function registrationError(status) {
+        var err = (status === 409 ? 'conflict' : 'generic');
 
-        $("#registration").fadeOut(function () {
-            $(".error").addClass(err);
+        $(".loading-spinner").fadeOut(function () {
+            $(".error").addClass(err).fadeIn();
         });
 
         setTimeout(function () {
