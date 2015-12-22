@@ -11,15 +11,15 @@ $(document).ready(function () {
 
     circle.animate(0.7);
 
-    var circle = new ProgressBar.Circle('#usertests', options);
+    circle = new ProgressBar.Circle('#usertests', options);
 
     circle.animate(0.4);
 
-    var circle = new ProgressBar.Circle('#development', options);
+    circle = new ProgressBar.Circle('#development', options);
 
     circle.animate(0.2);
 
-    var circle = new ProgressBar.Circle('#marketing', options);
+    circle = new ProgressBar.Circle('#marketing', options);
 
     circle.animate(0.2);
 
