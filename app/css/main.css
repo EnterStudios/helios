@@ -320,7 +320,6 @@ h2.heading {
 .background-image {
     background-image: url(../img/header.jpg);
     background-size: cover;
-    min-height: 100vh;
 }
 
 .background-image .container {
@@ -349,7 +348,6 @@ h2.heading {
     right: 0;
     bottom: -150px;
     padding: 0;
-    padding-right: 25px;
 }
 
 form.register input.mail {
