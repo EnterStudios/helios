@@ -394,7 +394,7 @@ img.logo {
 
 .mock-container-mobile.mobile {
     float: left;
-    margin-top: -30%;
+    margin-top: -40%;
     padding-bottom: 25px;
 }
 
@@ -514,7 +514,7 @@ ul.footer-menu li.first a {
     }
 
     h1 {
-        max-width: 75%
+        max-width: 85%
     }
 
     .countdown {
@@ -555,15 +555,15 @@ ul.footer-menu li.first a {
     }
 
     .header-teaser {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     .background-image {
-        padding-bottom: 42%;
+        padding-bottom: 65%;
     }
 
     img.logo {
-        margin-top: 0px;
+        margin-top: 0;
         max-width: 300px;
     }
 
