@@ -17,11 +17,11 @@ $(document).ready(function () {
 
     circle = new ProgressBar.Circle('#development', options);
 
-    circle.animate(0.2);
+    circle.animate(0.75);
 
     circle = new ProgressBar.Circle('#marketing', options);
 
-    circle.animate(0.2);
+    circle.animate(0.1);
 
 
 // registration
