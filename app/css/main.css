@@ -615,15 +615,15 @@ ul.footer-menu li.first a {
     }
 
     .camera-wrapper {
-        background-image: url('../img/mocks/bild_2_bar.png');
+        background-image: url('../img/mocks/bild_2_bar.jpg');
     }
 
     .location-wrapper {
-        background-image: url('../img/mocks/bild_1_boote.png');
+        background-image: url('../img/mocks/bild_1_boote.jpg');
     }
 
     .map-wrapper {
-        background-image: url('../img/mocks/bild_3_map.png');
+        background-image: url('../img/mocks/bild_3_map.jpg');
     }
 
     .camera-wrapper, .location-wrapper, .map-wrapper {
