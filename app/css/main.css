@@ -309,7 +309,7 @@ body {
 }
 
 .map {
-    background-image: url('../img/mocks/bild_3_map.png');
+    background-image: url('../img/mocks/bild_3_map.jpg');
 }
 
 .absolute-right {
@@ -322,11 +322,11 @@ body {
 }
 
 .camera {
-    background-image: url('../img/mocks/bild_2_bar.png');
+    background-image: url('../img/mocks/bild_2_bar.jpg');
 }
 
 .location {
-    background-image: url('../img/mocks/bild_1_boote.png');
+    background-image: url('../img/mocks/bild_1_boote.jpg');
 }
 
 .half-container {
@@ -688,6 +688,13 @@ ul.footer-menu li.first a {
     img.logo {
         margin-top: 0;
         max-width: 300px;
+    }
+
+    .social-wrapper ul li {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding: 3px 0;
     }
 
 }
