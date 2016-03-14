@@ -294,7 +294,49 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     background: white;
     -webkit-font-smoothing: antialiased;
-    padding-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: lighter;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 50%;
+    bottom: 0;
+    background-position: center;
+}
+
+.map {
+    background-image: url('../img/mocks/bild_3_map.png');
+}
+
+.absolute-right {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+}
+
+.camera {
+    background-image: url('../img/mocks/bild_2_bar.png');
+}
+
+.location {
+    background-image: url('../img/mocks/bild_1_boote.png');
+}
+
+.half-container {
+    max-width: 600px;
+}
+
+.map-wrapper img, .location-wrapper img, .camera-wrapper img {
+    margin: 0 auto;
+    max-height: 500px;
+    padding: 50px;
 }
 
 h1.heading {
@@ -312,17 +354,29 @@ h2.heading {
     max-width: 100%;
 }
 
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
 .responsive-img {
     max-width: 100%;
     height: auto;
 }
 
 .background-image {
-    background-image: url(../img/header.jpg);
+    /*background-image: url(../img/header.jpg); */
+    background-color: #FF664D;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .background-image .container {
+    position: relative;
+}
+
+.relative {
     position: relative;
 }
 
@@ -342,12 +396,8 @@ h2.heading {
     font-size: 22px;
 }
 
-.mock-container {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    bottom: -150px;
-    padding: 0;
+.mock-container img {
+    padding-right: 25px;
 }
 
 form.register input.mail {
@@ -468,9 +518,20 @@ ul.footer-menu li.first a {
     background-position: center;
 }
 
+.red {
+    background: #ff4637;
+    color: white;
+    padding: 50px 0;
+    font-weight: bold;
+}
+
 .wrapper {
     position: relative;
     padding: 5px;
+}
+
+.center {
+    text-align: center;
 }
 
 .wrapper h4.sub {
@@ -478,6 +539,10 @@ ul.footer-menu li.first a {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+}
+
+.lighter {
+    font-weight: lighter;
 }
 
 .circle#design {
@@ -496,6 +561,37 @@ ul.footer-menu li.first a {
     background-image: url(../img/icons/info.svg);
 }
 
+.social-wrapper ul {
+    list-style: none;
+    width: 100%;
+
+    float: right;
+    padding-top: 50px;
+}
+
+.social-wrapper ul li {
+    float: right;
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.social-wrapper ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-wrapper ul li img {
+    height: 20px;
+    width: auto;
+    margin-top: -4px;
+}
+
+.center-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
 @media (max-width: 991px) {
     .wrapper h4.sub {
         font-size: 16px;
@@ -503,6 +599,37 @@ ul.footer-menu li.first a {
 }
 
 @media (max-width: 767px) {
+
+    .header-container {
+        margin-top: 20px;
+    }
+
+    .absolute-left, .absolute-right {
+        display: none;
+    }
+
+    .mock-container img {
+        padding: 20px 0;
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+
+    .camera-wrapper {
+        background-image: url('../img/mocks/bild_2_bar.png');
+    }
+
+    .location-wrapper {
+        background-image: url('../img/mocks/bild_1_boote.png');
+    }
+
+    .map-wrapper {
+        background-image: url('../img/mocks/bild_3_map.png');
+    }
+
+    .camera-wrapper, .location-wrapper, .map-wrapper {
+        background-size: cover;
+        margin: 0 -30px;
+    }
 
     img.logo {
         width: 100%;
@@ -555,11 +682,7 @@ ul.footer-menu li.first a {
     }
 
     .header-teaser {
-        font-size: 26px;
-    }
-
-    .background-image {
-        padding-bottom: 65%;
+        font-size: 25px;
     }
 
     img.logo {
@@ -642,6 +765,10 @@ ul.footer-menu li.first a {
 .sk-folding-cube .sk-cube4:before {
     -webkit-animation-delay: 0.9s;
     animation-delay: 0.9s;
+}
+
+.text-padding {
+    padding: 50px 30px;
 }
 
 @-webkit-keyframes sk-foldCubeAngle {
