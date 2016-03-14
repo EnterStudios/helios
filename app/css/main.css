@@ -677,10 +677,6 @@ ul.footer-menu li.first a {
         text-align: center;
     }
 
-    .container {
-        padding: 0 30px;
-    }
-
     .header-teaser {
         font-size: 25px;
     }
@@ -695,6 +691,15 @@ ul.footer-menu li.first a {
         width: 100%;
         text-align: left;
         padding: 3px 0;
+    }
+
+    .text-padding {
+        padding: 0px 0 !important;
+        padding-bottom: 30px !important;
+    }
+
+    h2 {
+        font-size: 35px;
     }
 
 }
@@ -812,4 +817,30 @@ ul.footer-menu li.first a {
         transform: perspective(140px) rotateY(180deg);
         opacity: 0;
     }
+}
+
+.get-it-icon {
+    height: 35px;
+    width: auto;
+    float: left;
+    height: 40px;
+    width: auto;
+    float: left;
+}
+
+.get-it-icon.apple {
+    padding-right: 10px;
+}
+
+.get-it {
+    float: left;
+    padding-top: 25px;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+p.visible-xs.smaller-font {
+    font-size: 20px;
 }
