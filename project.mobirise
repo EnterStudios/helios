@@ -771,6 +771,10 @@
               "font-family": "'Open Sans', sans-serif",
               "googleLink": "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700",
               "color": "#ffffff"
+            },
+            ".btn": {
+              "font-family": "'Open Sans', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Open+Sans:400,300,700"
             }
           },
           "_anchor": "form1-16",
@@ -789,7 +793,7 @@
           },
           "title": "SCHREIB UNS DEINE MEINUNG",
           "form": {
-            "action": "info@locator-app.com",
+            "action": "team@locator-app.com",
             "alerts": {
               "success": "Vielen Dank für deine Message"
             },

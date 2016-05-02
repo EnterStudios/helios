@@ -14,6 +14,7 @@
 
 
 
+
 #menu-6 .mbr-brand__name {
   font-size: 16px;
 }
@@ -115,4 +116,7 @@
   font-size: 36px;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
+}
+#form1-16 .btn {
+  font-family: 'Open Sans', sans-serif;
 }
